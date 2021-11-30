@@ -1,0 +1,44 @@
+.landing-page-container {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+.background-image {
+  position: fixed;
+
+  background-image: url("../images/photo-1637139496880-52af24614d79.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display: flex;
+  /* Add the blur effect */
+  filter: blur(8px) brightness(50%);
+  transform: scale(1.2);
+  width: 100%;
+  height: 100%;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.landing-page-header {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  justify-content: center;
+  padding: 15px;
+  background-color: peachpuff;
+}
+.large-text-container {
+  display: flex;
+
+  width: 100%;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+
+  background-color: blue;
+}
