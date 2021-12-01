@@ -1,6 +1,5 @@
 .landing-page-container {
   display: flex;
-
   width: 100%;
   height: 100%;
 }
@@ -20,25 +19,99 @@
 }
 
 .content-container {
-  display: flex;
   width: 100%;
   height: 100%;
+  -moz-animation: fadein 3s; /* Firefox */
+  -webkit-animation: fadein 3s;
+  -o-animation: fadein 3s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .landing-page-header {
+  position: absolute;
   display: flex;
   height: 10%;
   width: 100%;
   justify-content: center;
-  padding: 15px;
+  align-items: center;
   background-color: peachpuff;
 }
-.large-text-container {
-  display: flex;
-
-  width: 100%;
-  height: 25%;
+.no-header-container {
   align-items: center;
   justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.large-text-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
-  background-color: blue;
+.typing-demo {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 14ch;
+  animation: typing 2s steps(30), blink 0.5s step-end infinite alternate;
+  text-overflow: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 50px;
+  width: 24%;
+  font-family: "Consolas", "Liberation Mono", "Courier", "monospace";
+  /* opacity: 0; */
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }

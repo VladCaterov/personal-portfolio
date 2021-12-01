@@ -6,12 +6,17 @@ const LandingPage = () =>{
       <div className="background-image"></div>
       <div className="content-container">
          <div className="landing-page-header">
-         </div>
-
-         <div className="large-text-container">
             <h1>Hello</h1>
          </div>
+            <div className="large-text-container">
+               <div className="typing-demo">
+                  Vladimir Caterov
+               </div>
+            </div>
       </div>
+      {/* <div>
+         <h1>Hello</h1>
+      </div> */}
     </div>
  );
 }
