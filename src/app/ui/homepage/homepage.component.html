@@ -5,40 +5,27 @@
             <app-social-media-link [url]="linkedinIconUrl" [webAddress]="linkedinUrl"></app-social-media-link>
             <app-social-media-link [url]="twitterIconUrl" [webAddress]="twitterUrl"></app-social-media-link>
             <app-social-media-link [url]="githubIconUrl" [webAddress]="githubUrl"></app-social-media-link>
-
-            <!-- <img id="app-homepage-header-socials__button" src="../../../assets/linkedin-logo.png">
-            <img id="app-homepage-header-socials__button" src="../../../assets/twitter-logo.png">
-            <img id="app-homepage-header-socials__button" src="../../../assets/github-logo.png"> -->
         </div>
-        <div id="app-homepage-header__backdrop-container">     
-            <div class="app-homepage-header__backdrop-container-child">
-                <mat-tab-group class="tabular-child">
-                    <mat-tab>
-                        <ng-template mat-tab-label>
-                            <mat-icon fontIcon="file" class="example-tab-icon"></mat-icon>
-                            First
-                          </ng-template>
-                    </mat-tab>
-                    
-                    <mat-tab label="Second"> Content 2 </mat-tab>
-                  </mat-tab-group>
-                  
-                <!-- <div class="navigation-child">
-                    <button mat-raised-button class="navigation-button">Resume</button>
-                    <button mat-raised-button class="navigation-button">Hello World</button>
-                </div> -->
-            </div>
-            <div class="app-homepage-header__backdrop-container-child">
-                <div id="profile-container">
+        <div id="app-homepage-header__backdrop-container">
+            <div id="profile-container" class="app-homepage-header__backdrop-container-child">
                     <div id="profile-image-container"><img id="profile-image" src="../../../assets/1685619657657.jpeg"></div>
                     <h1 id="profile-name">Vladimir Caterov</h1>
-                </div>
-            </div>
+                </div>     
             <div class="app-homepage-header__backdrop-container-child">
-                <div  class="navigation-child">
-                    <button mat-raised-button class="navigation-button">About</button>
-                    <button mat-raised-button class="navigation-button">Contact</button>
-                </div>
+                <mat-tab-group   animationDuration="1000ms" class="tabular-child" dynamicHeight mat-align-tabs="start">
+                    <mat-tab>
+                        <ng-template mat-tab-label> Projects </ng-template>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label> Resume </ng-template>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label> About </ng-template>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label> Contact </ng-template>
+                    </mat-tab>
+                  </mat-tab-group>
             </div>
         </div>
     </div>
