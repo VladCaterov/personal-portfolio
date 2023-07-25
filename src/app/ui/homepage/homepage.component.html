@@ -12,10 +12,21 @@
         </div>
         <div id="app-homepage-header__backdrop-container">     
             <div class="app-homepage-header__backdrop-container-child">
-                <div class="navigation-child">
+                <mat-tab-group class="tabular-child">
+                    <mat-tab>
+                        <ng-template mat-tab-label>
+                            <mat-icon fontIcon="file" class="example-tab-icon"></mat-icon>
+                            First
+                          </ng-template>
+                    </mat-tab>
+                    
+                    <mat-tab label="Second"> Content 2 </mat-tab>
+                  </mat-tab-group>
+                  
+                <!-- <div class="navigation-child">
                     <button mat-raised-button class="navigation-button">Resume</button>
                     <button mat-raised-button class="navigation-button">Hello World</button>
-                </div>
+                </div> -->
             </div>
             <div class="app-homepage-header__backdrop-container-child">
                 <div id="profile-container">
