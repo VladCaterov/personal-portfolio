@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
 })
 
 export class HomepageComponent {
-  linkedinUrl = "../../../assets/linkedin-logo.png";
-  twitterUrl = "../../../assets/twitter-logo.png";
-  githubUrl = "../../../assets/github-logo.png"; 
+  linkedinIconUrl = "../../../assets/linkedin-logo.png";
+  twitterIconUrl = "../../../assets/twitter-logo.png";
+  githubIconUrl = "../../../assets/github-logo.png"; 
+
+  linkedinUrl = "https://www.linkedin.com/in/vladimircaterov/"
+  twitterUrl = "https://twitter.com/VCaterov"
+  githubUrl = "https://github.com/VladCaterov"
 }

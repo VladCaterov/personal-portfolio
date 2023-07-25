@@ -33,7 +33,7 @@ import {
 export class SocialMediaLinkComponent implements OnInit {
  
   @Input() url ="";
-
+  @Input() webAddress ="";
   isHovering = false;
   
   hover(bool: boolean) {
