@@ -7,6 +7,10 @@ import { ProjectListingComponent } from './ui/project-listing/project-listing.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SocialMediaLinkComponent } from './ui/social-media-link/social-media-link.component';
 import { MaterialImports } from './imported-materials';
+import { ProjectContainerComponent } from './ui/projects/project-container/project-container.component';
+import { ResumeContainerComponent } from './ui/projects/resume-container/resume-container.component';
+import { AboutContainerComponent } from './ui/projects/about-container/about-container.component';
+import { ContactContainerComponent } from './ui/projects/contact-container/contact-container.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +18,10 @@ import { MaterialImports } from './imported-materials';
     HomepageComponent,
     ProjectListingComponent,
     SocialMediaLinkComponent,
+    ProjectContainerComponent,
+    ResumeContainerComponent,
+    AboutContainerComponent,
+    ContactContainerComponent,
   ],
   imports: [
     BrowserModule,

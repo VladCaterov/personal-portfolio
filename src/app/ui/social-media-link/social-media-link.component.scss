@@ -7,9 +7,11 @@
     border-radius: 25%;
     border-style: solid;
     border-color: #ffe4c4;
-    
+    &:hover{
+        background-color: #e3e9f1;
+    }
 }
 
-.app-homepage-header-socials__button:hover{
-    background-color: #e3e9f1;
-}
+// .app-homepage-header-socials__button:hover{
+//     background-color: #e3e9f1;
+// }
