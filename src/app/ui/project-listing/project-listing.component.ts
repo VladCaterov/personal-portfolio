@@ -1,5 +1,5 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-project-listing',
@@ -8,17 +8,18 @@ import { Component, OnInit } from '@angular/core';
   animations: [
     trigger('flipState', [
       state('active', style({
-        transform: 'rotateY(179deg)'
-      })),
+        transform: 'rotateY(358deg)',
+      }),),
       state('inactive', style({
-        transform: 'rotateY(0)'
+        // transform: 'rotateY(180)'
       })),
-      transition('active => inactive', animate('500ms ease-out')),
-      transition('inactive => active', animate('500ms ease-in'))
+      transition('active => inactive', animate('1s 0s ease-out')),
+      transition('inactive => active', animate('1s 0s ease-out')),
     ])
   ]
 })
 export class ProjectListingComponent implements OnInit{
+  @Input() projectTitle ="";
   constructor() {}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
@@ -27,4 +28,5 @@ export class ProjectListingComponent implements OnInit{
   toggleFlip(){
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive'
   }
+  
 }

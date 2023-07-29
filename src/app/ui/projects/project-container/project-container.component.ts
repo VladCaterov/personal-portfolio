@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./project-container.component.scss']
 })
 export class ProjectContainerComponent {
+  projectTitle1 = "What"
+  projectTitle2 = "The"
+  projectTitle3 = "Fu"
+  projectTitle4 = "Hello"
+  projectTitle5 = "Hello"
 
 }

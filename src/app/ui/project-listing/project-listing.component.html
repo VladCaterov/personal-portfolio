@@ -1,7 +1,21 @@
-<div class="project-listing-container" (click)="toggleFlip()" [@flipState]="flip">
+<!-- <div class="project-listing-container" (click)="toggleFlip()" [@flipState]="flip">
     <div class="project-listing-front">FRONT</div>
     <div class="project-listing-back">
         <div class="project-listing-header"></div>
         <div class="project-listing-body"></div>
     </div>
+</div> -->
+<ng-container>
+    
+
+<div (click)="toggleFlip()" [@flipState]="flip" [ngSwitch]="flip">
+    <mat-card *ngSwitchCase="'inactive'" id="project-listing-front" class="project-listing-container">
+        <mat-card-header>{{projectTitle}}</mat-card-header>
+        <mat-card-content>GHEKEKEKEK</mat-card-content>
+    </mat-card>
+    <mat-card *ngSwitchCase="'active'" id="project-listing-back" class="project-listing-container">
+        <mat-card-header>Good bye</mat-card-header>
+        <mat-card-content>GHEKEKEKEK</mat-card-content>
+    </mat-card>
 </div>
+</ng-container>

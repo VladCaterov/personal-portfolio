@@ -1,14 +1,25 @@
 .project-listing-container{
-    border-radius: 10px;
     border-width: 3px;
     border-color: black;
+    width: 325px;
+    height: 350px;
+
+    mat-card-header{
+        background-color: #74B3CE;
+        // background-color: #508991;
+    }
+    mat-card-content{
+        background-color: #74B3CE;
+        background-color: #508991;
+        height: 100%;
+    }
 }
-.project-listing-header{
+.project-listing-front{
     height: max-content;
     background-color: #508991;
     width: 100%
 }
-.project-listing-body{
-    background-color: #09BC8A;
-    width: 100%
-}
+// .project-listing-body{
+//     background-color: #09BC8A;
+//     width: 100%
+// }
